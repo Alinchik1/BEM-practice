@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Learn BEM</h1>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="banner">
+            <h2 class="banner__header">The Benefits of BEM</h2>
+        </section>
+        <section class="about">
+            <h2 class="about__header">About the <span class="about__header about__header--blue">naming</span></h2>
+            <p class="about__text">Inceptos parturient risus adipiscing nullam primis a vel dapibus laoreet at condimentum lorem ultrices sodales id netus semper. Integer adipiscing magna parturient parturient metus a mus sodales inceptos scelerisque libero adipiscing a turpis libero suspendisse penatibus nullam nisi vestibulum fringilla adipiscing lectus nam ad nec sociosqu egestas. Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+        </section>
+        <section class="benefits">
+            <h2 class="benefits__header">The benefits</h2>
+            <div class="container">
+                <ul class="container__list">
+                    <li class="container__item container__item--blue">
+                        <h3 class="container__header">Structure your CSS</h3>
+                        <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+                    </li>
+                    <li class="container__item">
+                        <h3 class="container__header">Develop faster</h3>
+                        <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+                    </li>
+                    <li class="container__item">
+                        <h3 class="container__header">Work perfectly in teams</h3>
+                        <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+                    </li>
+                    <li class="container__item container__item--blue">
+                        <h3 class="container__header">Change CSS and relax</h3>
+                        <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact__header">Find out <span class="contact__header contact__header--blue">more</span></h2>
+            <form action="#" class="contact-form" method="post">
+                <div class="form-control">
+                    <label for="name" class="form-control__label">Name</label>
+                    <input type="text" id="name" class="form-control__input" minlength="4" maxlength="20" required>
+                </div>
+                <div class="form-control">
+                    <label for="email" class="form-control__label">Email</label>
+                    <input type="email" id="email" class="form-control__input" required>
+                </div>
+                <div class="form-control">
+                    <label for="message" class="form-control__label">Message</label>
+                    <textarea name="message" id="message" class="form-control__input"></textarea>
+                </div>
+                <button class="contact-form__button" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__header">Newsletter</h3>
+        <form action="#" method="post" class="footer-form">
+            <div class="subscribtion">
+                <label for="subscribtion-email" class="subscribtion__label"><span class="visually-hidden">Email</span></label>
+                <input type="email" id="subscribtion-email" class="subscribtion__input" required>
+            </div>
+            <ul class="footer-form__buttons-list">
+                <li class="footer-form__buttons-item">
+                    <button class="footer-form__button footer-form__button--transparent" type="submit">Unsubscribe</button>
+                </li>
+                <li class="footer-form__buttons-item">
+                    <button class="footer-form__button" type="submit">Subscribe</button>
+                </li>
+            </ul>
+        </form>
+        <div class="footer-benefits">
+            <h4 class="footer-benefits__header">Benefits</h4>
+            <ul class="footer-benefits__list">
+                <li class="footer-benefits__item">Structure your CSS</li>
+                <li class="footer-benefits__item">Develop faster</li>
+                <li class="footer-benefits__item">Work perfectly in Teams</li>
+                <li class="footer-benefits__item">Make changes and relax</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4 class="footer-contact__header">Contact</h4>
+            <ul class="footer-contact__list">
+                <li class="footer-contact__item">Simon vom Eyser</li>
+                <li class="footer-contact__item"><a href="mailto:info@simonvomeyser.de.com" target="_blank" class="footer-contact__link">info@simonvomeyser.de</a></li>
+            </ul>
+        </div>
+        <div class="footer-legal">
+            <h4 class="footer-legal__header">Legal</h4>
+            <p class="footer-legal__text">Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+        </div>
+    </footer>
+</body>
+</html>
