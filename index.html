@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEM</title>
 </head>
 <body>
 <header class="header">
-  <h1 class="title">Learn BEM</h1>
+  <div class="header-logo">
+    <h1 class="title">Learn BEM</h1>
+  </div>
   <nav class="navigation">
     <ul class="navigation__list">
-      <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">About</a></li>
+      <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
       <li class="navigation__item"><a href="" class="navigation__link">Benefits</a></li>
       <li class="navigation__item"><a href="" class="navigation__link">Form</a></li>
     </ul>
@@ -18,70 +25,79 @@
 </header>
 <main class="content">
   <section class="banner">
-    <picture class="banner__picture">
-      <img src="img/banner-bg.webp" alt="Learn everything about BEM!" class="banner__img" width="1440" height="1081">
-    </picture>
     <h2 class="banner__header">The Benefits of BEM</h2>
   </section>
   <section class="about">
-    <h2 class="about__header">About the <span class="about__header about__header--blue">naming</span></h2>
+    <h2 class="about__header">About the <span class="about__header--text-secondary">naming</span></h2>
     <p class="about__text">Inceptos parturient risus adipiscing nullam primis a vel dapibus laoreet at condimentum lorem ultrices sodales id netus semper. Integer adipiscing magna parturient parturient metus a mus sodales inceptos scelerisque libero adipiscing a turpis libero suspendisse penatibus nullam nisi vestibulum fringilla adipiscing lectus nam ad nec sociosqu egestas. Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
   </section>
   <section class="benefits">
     <h2 class="benefits__header">The benefits</h2>
-    <div class="container">
-      <ul class="container__list">
-        <li class="container__item container__item--blue">
-          <svg class="container__icon" width="97" height="97">
-            <use href="img/sprite.svg#icon-ok"></use>
-          </svg>
-          <h3 class="container__header">Structure your CSS</h3>
-          <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+    <div class="benefits-container">
+      <ul class="benefits-container__list">
+        <li class="benefits-container__item benefits-container__item--structure">
+          <div class="benefits-container__wrapper">
+            <img src="img/structure-bg-big.webp" alt="Structure your css" class="benefits-container__img" width="720" height="480">
+            <svg class="benefits-container__icon" width="97" height="97">
+              <use href="img/sprite.svg#icon-ok"></use>
+            </svg>
+            <h3 class="benefits-container__header benefits-container__header--blue">Structure your CSS</h3>
+            <p class="benefits-container__text benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+          </div>
         </li>
-        <li class="container__item">
-          <svg class="container__icon" width="97" height="97">
-            <use href="img/sprite.svg#icon-fast"></use>
-          </svg>
-          <h3 class="container__header">Develop faster</h3>
-          <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+        <li class="benefits-container__item benefits-container__item--fast">
+          <div class="benefits-container__wrapper--transparent">
+            <img src="img/fast-bg-big.webp" alt="Develop faster" class="benefits-container__img" width="720" height="480">
+            <svg class="benefits-container__icon" width="97" height="97">
+              <use href="img/sprite.svg#icon-fast"></use>
+            </svg>
+            <h3 class="benefits-container__header benefits-container__header--white">Develop faster</h3>
+            <p class="benefits-container__text benefits-container__text--white"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+          </div>
         </li>
-        <li class="container__item">
-          <svg class="container__icon" width="97" height="97">
-            <use href="img/sprite.svg#icon-team"></use>
-          </svg>
-          <h3 class="container__header">Work perfectly in teams</h3>
-          <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+        <li class="benefits-container__item benefits-container__item--relax">
+          <div class="benefits-container__wrapper">
+            <img src="img/relax-bg-big.webp" alt="Relax and chill" class="benefits-container__img" width="720" height="480">
+            <svg class="benefits-container__icon" width="97" height="97">
+              <use href="img/sprite.svg#icon-relax"></use>
+            </svg>
+            <h3 class="benefits-container__header benefits-container__header--blue">Change CSS and relax</h3>
+            <p class="benefits-container__text benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+          </div>
         </li>
-        <li class="container__item container__item--blue">
-          <svg class="container__icon" width="97" height="97">
-            <use href="img/sprite.svg#icon-relax"></use>
-          </svg>
-          <h3 class="container__header">Change CSS and relax</h3>
-          <p class="container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+        <li class="benefits-container__item benefits-container__item--teams">
+          <div class="benefits-container__wrapper--transparent">
+            <img src="img/teams-bg-big.webp" alt="Work in teams" class="benefits-container__img" width="720" height="480">
+            <svg class="benefits-container__icon" width="97" height="97">
+              <use href="img/sprite.svg#icon-team"></use>
+            </svg>
+            <h3 class="benefits-container__header benefits-container__header--white">Work perfectly in teams</h3>
+            <p class="benefits-container__text benefits-container__text--white"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+          </div>
         </li>
       </ul>
     </div>
   </section>
   <section class="contact">
-    <h2 class="contact__header">Find out <span class="contact__header contact__header--blue">more</span></h2>
+    <h2 class="contact__header">Find out <span class="contact__header--text-secondary">more</span></h2>
     <form action="#" class="contact-form" method="post">
-      <div class="form-control">
-        <label for="name" class="form-control__label">Name</label>
-        <input type="text" id="name" class="form-control__input" minlength="4" maxlength="20" required>
+      <div class="contact-form__container">
+        <label for="name" class="contact-form__label">Name</label>
+        <input type="text" id="name" class="contact-form__input" minlength="4" maxlength="20" required>
       </div>
-      <div class="form-control">
-        <label for="email" class="form-control__label">Email</label>
-        <input type="email" id="email" class="form-control__input" required>
+      <div class="contact-form__container">
+        <label for="email" class="contact-form__label">Email</label>
+        <input type="email" id="email" class="contact-form__input" required>
       </div>
-      <div class="form-control">
-        <label for="message" class="form-control__label">Message</label>
-        <textarea name="message" id="message" class="form-control__input"></textarea>
+      <div class="contact-form__container">
+        <label for="message" class="contact-form__label">Message</label>
+        <textarea name="message" id="message" class="contact-form__input contact-form__input--textarea"></textarea>
       </div>
       <button class="contact-form__button" type="submit">Send</button>
     </form>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer footer-separator">
   <h3 class="footer__header">Newsletter</h3>
   <form action="#" method="post" class="footer-form">
     <div class="subscription">
@@ -93,29 +109,31 @@
         <button class="footer-form__button footer-form__button--transparent" type="submit">Unsubscribe</button>
       </li>
       <li class="footer-form__buttons-item">
-        <button class="footer-form__button" type="submit">Subscribe</button>
+        <button class="footer-form__button footer-form__button--blue" type="submit">Subscribe</button>
       </li>
     </ul>
   </form>
-  <div class="footer-benefits">
-    <h4 class="footer-benefits__header">Benefits</h4>
-    <ul class="footer-benefits__list">
-      <li class="footer-benefits__item">Structure your CSS</li>
-      <li class="footer-benefits__item">Develop faster</li>
-      <li class="footer-benefits__item">Work perfectly in Teams</li>
-      <li class="footer-benefits__item">Make changes and relax</li>
-    </ul>
-  </div>
-  <div class="footer-contact">
-    <h4 class="footer-contact__header">Contact</h4>
-    <ul class="footer-contact__list">
-      <li class="footer-contact__item">Simon vom Eyser</li>
-      <li class="footer-contact__item"><a href="mailto:info@simonvomeyser.de.com" target="_blank" class="footer-contact__link">info@simonvomeyser.de</a></li>
-    </ul>
-  </div>
-  <div class="footer-legal">
-    <h4 class="footer-legal__header">Legal</h4>
-    <p class="footer-legal__text">Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+  <div class="footer-wrapper">
+    <div class="footer-benefits">
+      <h4 class="footer-benefits__header">Benefits</h4>
+      <ul class="footer-benefits__list">
+        <li class="footer-benefits__item">Structure your CSS</li>
+        <li class="footer-benefits__item">Develop faster</li>
+        <li class="footer-benefits__item">Work perfectly in Teams</li>
+        <li class="footer-benefits__item">Make changes and relax</li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4 class="footer-contact__header">Contact</h4>
+      <ul class="footer-contact__list">
+        <li class="footer-contact__item">Simon vom Eyser</li>
+        <li class="footer-contact__item"><a href="mailto:info@simonvomeyser.de.com" target="_blank" class="footer-contact__link">info@simonvomeyser.de</a></li>
+      </ul>
+    </div>
+    <div class="footer-legal">
+      <h4 class="footer-legal__header">Legal</h4>
+      <p class="footer-legal__text"><span class="text-break">Nisi libero netus dis ultricies</span> at eu parturient fames <span class="text-break">laoreet fermentum feugiat ac</span> adipiscing semper <span class="text-break">malesuada</span></p>
+    </div>
   </div>
 </footer>
 </body>
