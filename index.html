@@ -17,7 +17,7 @@
   </div>
   <nav class="navigation">
     <ul class="navigation__list">
-      <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">About</a></li>
+      <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
       <li class="navigation__item"><a href="" class="navigation__link">Benefits</a></li>
       <li class="navigation__item"><a href="" class="navigation__link">Form</a></li>
     </ul>
@@ -41,8 +41,8 @@
             <svg class="benefits-container__icon" width="97" height="97">
               <use href="img/sprite.svg#icon-ok"></use>
             </svg>
-            <h3 class="benefits-container__header--blue">Structure your CSS</h3>
-            <p class="benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+            <h3 class="benefits-container__header benefits-container__header--blue">Structure your CSS</h3>
+            <p class="benefits-container__text benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
           </div>
         </li>
         <li class="benefits-container__item benefits-container__item--fast">
@@ -51,8 +51,8 @@
             <svg class="benefits-container__icon" width="97" height="97">
               <use href="img/sprite.svg#icon-fast"></use>
             </svg>
-            <h3 class="benefits-container__header">Develop faster</h3>
-            <p class="benefits-container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+            <h3 class="benefits-container__header benefits-container__header--white">Develop faster</h3>
+            <p class="benefits-container__text benefits-container__text--white"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
           </div>
         </li>
         <li class="benefits-container__item benefits-container__item--relax">
@@ -61,8 +61,8 @@
             <svg class="benefits-container__icon" width="97" height="97">
               <use href="img/sprite.svg#icon-relax"></use>
             </svg>
-            <h3 class="benefits-container__header--blue">Change CSS and relax</h3>
-            <p class="benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+            <h3 class="benefits-container__header benefits-container__header--blue">Change CSS and relax</h3>
+            <p class="benefits-container__text benefits-container__text--blue"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
           </div>
         </li>
         <li class="benefits-container__item benefits-container__item--teams">
@@ -71,8 +71,8 @@
             <svg class="benefits-container__icon" width="97" height="97">
               <use href="img/sprite.svg#icon-team"></use>
             </svg>
-            <h3 class="benefits-container__header">Work perfectly in teams</h3>
-            <p class="benefits-container__text"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
+            <h3 class="benefits-container__header benefits-container__header--white">Work perfectly in teams</h3>
+            <p class="benefits-container__text benefits-container__text--white"> Nisi libero netus dis ultricies at eu parturient fames laoreet fermentum feugiat ac adipiscing semper malesuada</p>
           </div>
         </li>
       </ul>
@@ -81,23 +81,23 @@
   <section class="contact">
     <h2 class="contact__header">Find out <span class="contact__header--text-secondary">more</span></h2>
     <form action="#" class="contact-form" method="post">
-      <div class="form-control">
-        <label for="name" class="form-control__label">Name</label>
-        <input type="text" id="name" class="form-control__input" minlength="4" maxlength="20" required>
+      <div class="contact-form__container">
+        <label for="name" class="contact-form__label">Name</label>
+        <input type="text" id="name" class="contact-form__input" minlength="4" maxlength="20" required>
       </div>
-      <div class="form-control">
-        <label for="email" class="form-control__label">Email</label>
-        <input type="email" id="email" class="form-control__input" required>
+      <div class="contact-form__container">
+        <label for="email" class="contact-form__label">Email</label>
+        <input type="email" id="email" class="contact-form__input" required>
       </div>
-      <div class="form-control">
-        <label for="message" class="form-control__label">Message</label>
-        <textarea name="message" id="message" class="form-control__input--textarea"></textarea>
+      <div class="contact-form__container">
+        <label for="message" class="contact-form__label">Message</label>
+        <textarea name="message" id="message" class="contact-form__input contact-form__input--textarea"></textarea>
       </div>
       <button class="contact-form__button" type="submit">Send</button>
     </form>
   </section>
 </main>
-<footer class="footer separator">
+<footer class="footer footer-separator">
   <h3 class="footer__header">Newsletter</h3>
   <form action="#" method="post" class="footer-form">
     <div class="subscription">
@@ -106,10 +106,10 @@
     </div>
     <ul class="footer-form__buttons-list">
       <li class="footer-form__buttons-item">
-        <button class="footer-form__button--transparent" type="submit">Unsubscribe</button>
+        <button class="footer-form__button footer-form__button--transparent" type="submit">Unsubscribe</button>
       </li>
       <li class="footer-form__buttons-item">
-        <button class="footer-form__button" type="submit">Subscribe</button>
+        <button class="footer-form__button footer-form__button--blue" type="submit">Subscribe</button>
       </li>
     </ul>
   </form>
